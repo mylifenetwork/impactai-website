@@ -100,7 +100,8 @@ function FooterComponent({ showVectorFiller }) {
             </p>
           </div>
         </div>
-        <div className="copyright-footer">
+        <div className="copyright-footer" style={{display:'flex',flexDirection:'column'}}>
+          <p style={{color:'var(--accent)', pointerEvents:'none'}}>Designed by Sameer Gupta</p>
           <p>
             <FaRegCopyright /> Copyright @ 2024 | All Rights Reserved
           </p>
