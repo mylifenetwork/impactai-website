@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: calc(100vh - 100px);
+  /* height: calc(100vh - 100px); */
   padding: 30px 6vw;
   column-gap: 2vw;
 }

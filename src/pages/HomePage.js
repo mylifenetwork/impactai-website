@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {} from "../style/home_page.css";
 import { NavLink } from "react-router-dom";
 import NavMargin from "../components/NavMargin";
@@ -18,6 +18,10 @@ import YouTube from "react-youtube";
 import SliderCarousel from "../components/SliderCarousel";
 import FooterComponent from "../components/Footer";
 function HomePage() {
+  let [height, setHeight] = useState(window.outerHeight > 480);
+  window.addEventListener("scroll", () => {
+    setHeight(window.outerHeight > 480);
+  });
   let classNames = [];
   landingdisplaydata.map((item) => {
     return classNames.push(item.class);
@@ -31,7 +35,12 @@ function HomePage() {
           </video>
           <div className="container-tone">
             <NavMargin bgcolor="none" />
-            <div className="content-container">
+            <div
+              className="content-container"
+              style={{
+                height: height ? "calc(100vh - 100px)" : "calc(100vh)",
+              }}
+            >
               <Zoom duration={750} triggerOnce>
                 <h1>Impact AI</h1>
                 <h3>

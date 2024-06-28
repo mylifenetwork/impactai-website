@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import NavMargin from "../../components/NavMargin";
 import {} from "../../style/project1.css";
 import TechnologyPartners from "../../components/TechnologyPartners";
@@ -108,12 +108,18 @@ function Project1() {
       desc: "Lead Time for Bookings",
     },
   ];
+  let [height,setHeight] = useState(window.outerHeight>480)
+  window.addEventListener('resize',(()=>{
+    setHeight(window.outerHeight>480)
+  }))
   return (
     <>
       <div className="project-1-container">
         <NavMargin bgcolor={"var(--primary-three)"} />
         <div className="project-container">
-          <div className="project-landing-page">
+          <div className="project-landing-page" style={{
+                height: height ? "calc(100vh - 100px)" : "calc(100vh)",
+              }}>
             <Fade cascade triggerOnce duration={500}>
               <div className="project-landing-content">
                 <h1>
