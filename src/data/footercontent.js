@@ -1,17 +1,17 @@
 const footercontent = [
-  {
-    title: "Company",
-    contents: [
-      {
-        sub_title: "Privacy Policy",
-        route: "/privacy-policy",
-      },
-      {
-        sub_title: "Cookies Policy",
-        route: "/cookies-policy",
-      },
-    ],
-  },
+  // {
+  //   title: "Company",
+  //   contents: [
+  //     {
+  //       sub_title: "Privacy Policy",
+  //       route: "/privacy-policy",
+  //     },
+  //     {
+  //       sub_title: "Cookies Policy",
+  //       route: "/cookies-policy",
+  //     },
+  //   ],
+  // },
   {
     title: "Product",
     contents: [

@@ -9,7 +9,7 @@
 }
 .footer-container-links {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto;
   justify-content: space-around;
   align-items: top;
   padding: 40px 30px 0px 30px;

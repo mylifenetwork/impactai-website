@@ -9,8 +9,6 @@ import Error404 from "./pages/Error404";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Project1 from "./pages/Projects Pages/Project1";
 import LoadingScreen from "./pages/LoadingScreen";
-import PrivacyPolicy from "./pages/PrivacyPolicy";
-import CookiesPolicy from "./pages/CookiesPolicy";
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const handleLoading = () => {
@@ -39,14 +37,6 @@ function App() {
             <Route
               path="/projects/sign-language-translation-project"
               element={<Project1 />}
-            />
-            <Route
-              path="/privacy-policy"
-              element={<PrivacyPolicy/>}
-            />
-            <Route
-              path="/cookies-policy"
-              element={<CookiesPolicy/>}
             />
             <Route path="*" element={<Error404 />} />
           </Routes>
