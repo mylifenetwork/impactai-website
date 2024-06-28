@@ -88,12 +88,9 @@ body::-webkit-scrollbar-thumb{
   }
 } */
 
-.app-container{
+.app-container,body,html,#root{
   width:100vw;
   height:100vh;
   overflow-y:scroll;
-  overflow-x:hidden;
-}
-body,html{
   overflow-x:hidden;
 }
