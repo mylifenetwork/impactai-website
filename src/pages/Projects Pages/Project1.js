@@ -132,10 +132,21 @@ function Project1() {
                     fraction={0.1}
                   >
                     <NavLink to="/sign-up">
-                      <button>Subscribe To Our Newsletter!</button>
+                      <button
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                      >
+                        Subscribe To Our Newsletter!
+                      </button>
                     </NavLink>
                     <NavLink to="/contact-us">
-                      <button className="contact-us-btn-project">
+                      <button
+                        className="contact-us-btn-project"
+                        onClick={() => {
+                          window.scrollTo(0, 0);
+                        }}
+                      >
                         Contact Us <FaArrowRightLong />
                       </button>
                     </NavLink>

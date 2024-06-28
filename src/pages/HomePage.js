@@ -61,7 +61,7 @@ function HomePage() {
                 <LandingDisplay data={landingdisplaydata} />
               </div>
             </div>
-            <TechnologyPartners bgcolor={'var(--accent)'}/>
+            <TechnologyPartners bgcolor={"var(--accent)"} />
             <img
               src={vector_graphic}
               className="vector-graphic"
@@ -84,7 +84,12 @@ function HomePage() {
                 </Fade>
                 <AttentionSeeker effect="tada" triggerOnce>
                   <NavLink to="projects/sign-language-translation-project">
-                    <button className="slider-container-button">
+                    <button
+                      className="slider-container-button"
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                      }}
+                    >
                       Check Out Our Projects
                       <IoIosArrowDroprightCircle />
                     </button>
@@ -116,7 +121,11 @@ function HomePage() {
                 </div>
                 <Zoom triggerOnce duration={250}>
                   <NavLink to="/about-us">
-                    <button>
+                    <button
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                      }}
+                    >
                       Learn More About Us <IoIosArrowDroprightCircle />
                     </button>
                   </NavLink>

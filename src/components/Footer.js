@@ -62,11 +62,21 @@ function FooterComponent({ showVectorFiller }) {
                                 ? "#"
                                 : sub.route
                             }
+                            onClick={() => {
+                              window.scrollTo(0, 0);
+                            }}
                           >
                             {sub.sub_title}
                           </a>
                         ) : (
-                          <NavLink to={sub.route}>{sub.sub_title}</NavLink>
+                          <NavLink
+                            to={sub.route}
+                            onClick={() => {
+                              window.scrollTo(0, 0);
+                            }}
+                          >
+                            {sub.sub_title}
+                          </NavLink>
                         )}
                       </li>
                     );
@@ -96,12 +106,17 @@ function FooterComponent({ showVectorFiller }) {
           </div>
           <div className="location-footer">
             <p>
-              <IoMdPin /> Unit 740, Building 19W, HKSTP, Pak Shek Kok, NT, HK
+              <IoMdPin /> Building 19W, HKSTP, Pak Shek Kok, NT, HK
             </p>
           </div>
         </div>
-        <div className="copyright-footer" style={{display:'flex',flexDirection:'column'}}>
-          <p style={{color:'var(--accent)', pointerEvents:'none'}}>Designed by Sameer Gupta</p>
+        <div
+          className="copyright-footer"
+          style={{ display: "flex", flexDirection: "column" }}
+        >
+          <p style={{ color: "var(--accent)", pointerEvents: "none" }}>
+            Designed by Sameer Gupta
+          </p>
           <p>
             <FaRegCopyright /> Copyright @ 2024 | All Rights Reserved
           </p>

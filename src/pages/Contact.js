@@ -43,7 +43,7 @@ function Contact() {
                 <span>
                   <IoMdPin />
                 </span>
-                Unit 740, Building 19W, HKSTP, Pak Shek Kok, NT, HK
+                Building 19W, HKSTP, Pak Shek Kok, NT, HK
               </li>
             </ul>
             <div className="google-maps-container">
