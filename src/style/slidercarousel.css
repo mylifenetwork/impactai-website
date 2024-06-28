@@ -118,10 +118,10 @@
   .slick-next,
   .slick-prev {
     scale: 3;
-    opacity: 0.8;
+    opacity: 1;
   }
   .slider-card img{
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     margin-top: 20px;
     width:90vw;
     height:60vw;
@@ -131,13 +131,13 @@
     position: absolute;
     left: 5vw;
     transform: translateY(-2px);
-    -webkit-text-fill-color: var(--tertiary-accented);
+    -webkit-text-fill-color: var(--accent);
   }
   .slick-next::before {
     position: absolute;
     right: 5vw;
     transform: translateY(-2px);
-    -webkit-text-fill-color: var(--tertiary-accented);
+    -webkit-text-fill-color: var(--accent);
   }
   .slick-prev,
   .slick-next {
