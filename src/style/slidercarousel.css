@@ -1,0 +1,125 @@
+.slider-card-s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
+  column-gap: 3vw;
+  background: var(--primary-five);
+  /* border: 0.1vw solid var(--secondary-three); */
+  border-radius: 3.5vw;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  padding: 2vw;
+  margin: 0px auto;
+}
+.slider-carousel-container {
+  width: 75vw;
+  height: auto;
+  margin: 0vw 10vw 5vw 10vw;
+}
+.slick-dots li button::before {
+  -webkit-text-fill-color: var(--secondary-two);
+  margin-top: 0.7vw;
+}
+.slick-next::before,
+.slick-prev::before {
+  font-size: 2vw;
+  position: absolute;
+  transition: 0.3s;
+  -webkit-text-fill-color: var(--secondary-two);
+}
+.slick-next,
+.slick-prev {
+  scale: 2.7;
+}
+.slick-next::before {
+  right: -0.7vw;
+}
+.slick-prev::before {
+  right: 0.7vw;
+} 
+.slider-card img {
+  height: 25vw;
+  border-radius: 3.5vw 0.7vw 0.7vw 3.5vw;
+}
+.slider-card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.slider-card-text p {
+  text-align: center;
+  color: var(--tertiary-light);
+  font-size: 1.2vw;
+}
+.slider-card-text h1 {
+  color: var(--secondary-four);
+  font-size: 3.7vw;
+}
+@media only screen and (max-width: 970px) {
+  .slider-card-text p {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .slick-next,
+  .slick-prev {
+    scale: 2.2;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .slider-card-s {
+    flex-direction: column;
+    padding-bottom: 4vw;
+  }
+  .slider-card img {
+    height: 30vw;
+  }
+  .slider-card-text p {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .slider-carousel-container {
+    width: 100vw;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+  }
+  .slider-card-text h1{
+    font-size:5.5vw;
+    margin-top: 1vw;
+  }
+  .slider-card img{
+    height:35vw
+  }
+  .slider-card-text p{
+    font-size:2.5vw
+  }
+  .slider-card-s {
+    width: 100vw;
+    border-radius: 0px;
+    padding:5vw;
+  }
+  .slick-next,
+  .slick-prev {
+    scale: 3;
+    opacity: 0.2;
+  }
+  .slick-prev::before {
+    position: absolute;
+    left: 5vw;
+    transform: translateY(-2px);
+    -webkit-text-fill-color: var(--secondary-four);
+  }
+  .slick-next::before {
+    position: absolute;
+    right: 5vw;
+    transform: translateY(-2px);
+    -webkit-text-fill-color: var(--secondary-four);
+  }
+  .slick-prev,
+  .slick-next {
+    z-index: 20000;
+  }
+}

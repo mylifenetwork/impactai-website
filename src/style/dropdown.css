@@ -1,0 +1,26 @@
+.project-menu-full-screen {
+  background: var(--primary);
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  z-index: 10000;
+  transition: 0.3s;
+}
+.project-menu-full-screen ul {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+}
+.project-menu-full-screen li {
+  text-align: center;
+  padding: 6px;
+  border-bottom: 1px solid var(--accent);
+  color: var(--tertiary);
+  font-size: 15px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.project-menu-full-screen li:hover {
+  color: var(--tertiary-accented);
+  font-size: 16px;
+}

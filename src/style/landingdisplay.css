@@ -1,0 +1,102 @@
+.container-landing-display {
+  height: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  column-gap: 40px;
+  opacity: 0.8;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  padding: 5px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+.landing-display-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 30px;
+  margin: 10px 0px;
+  transition: 0.3s;
+}
+.landing-display-card p {
+  text-align: center;
+  font-size: 12px;
+  color: var(--tertiary);
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.2);
+}
+.landing-display-card h4 {
+  color: var(--tertiary-accented);
+  text-shadow: 0px 0px 20px var(--secondary-three);
+  font-size: 17px;
+}
+.card-icon {
+  margin-top: 7px;
+  transition: 0.3s;
+}
+.card-icon:hover {
+  scale: 1.1;
+}
+
+@media only screen and (max-width: 900px) {
+  .container-landing-display {
+    grid-template-columns: auto auto auto;
+    scale: 0.95;
+    margin-top: -30px;
+    column-gap: 30px;
+  }
+  .landing-display-card {
+    margin: 5p;
+  }
+  .landing-display-card h4 {
+    font-size: 15px;
+  }
+  .card-icon {
+    margin-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .container-landing-display {
+    scale: 0.94;
+    margin: 0px;
+    column-gap: 30px;
+  }
+  .landing-display-card p {
+    display: none;
+  }
+  .landing-display-card h4 {
+    font-size: 15px;
+  }
+  .card-icon {
+    scale: 0.95;
+  }
+  .card-icon:hover{
+    scale:1.05
+  }
+}
+@media only screen and (max-width: 550px) {
+  .container-landing-display {
+    /* grid-template-columns: auto auto; */
+    /* scale: 0.8; */
+    margin-top: -10px;
+    column-gap: 5px;
+    /* transform:translateY(-80px) */
+  }
+  .landing-display-card {
+    margin: 2px 10px;
+  }
+  .card-icon {
+    scale: 0.8;
+    margin: 3px 0px;
+  }
+  .card-icon:hover{
+    scale:0.9
+  }
+}
+@media only screen and (max-width: 470px) {
+  .container-landing-display {
+    scale: 0.8;
+    margin-top: -25px;
+  }
+}

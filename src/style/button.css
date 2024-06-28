@@ -1,0 +1,21 @@
+.nav-sign-up {
+  width: 9vw;
+  height: 40px;
+  border-radius: 20px;
+  background: var(--secondary-gradient);
+  border: none;
+  color: var(--tertiary-accented);
+  font-weight: 700;
+  transition: all 0.3s;
+  min-width: 6vw;
+  margin-right: 15px;
+  font-family:'Poppins'
+}
+.nav-sign-up:hover {
+  scale: 1.02;
+  font-size: 0.9em;
+}
+.nav-sign-up:active {
+  scale: 1;
+  transition: 0s;
+}

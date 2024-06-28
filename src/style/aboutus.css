@@ -1,0 +1,239 @@
+.about-us-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--primary-four);
+  height: auto;
+  width: 100vw;
+}
+.about-us-video-container {
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+.vector-graphics-about{
+  display:flex;
+  gap:0px;
+  width:100vw;
+  height:10vw;
+}
+.vector-graphics-about img{
+  width:75vw
+}
+.company-desc-cont{
+  background:var(--primary-two)
+}
+.company-description-container{
+  background:var(--primary-three);
+  opacity:1;
+  padding: 4vw 5vw;
+  margin:50px 50px 40px 50px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.team-container{
+  background:var(--accent);
+}
+.team-container h1{
+  color:var(--secondary-two);
+  font-size:5vw;
+  letter-spacing: 2px;
+  margin-bottom: 1.5vw;
+}
+.company-description-container h1{
+  font-size:5vw;
+  line-height: 5.5vw;
+  color:var(--secondary-four);
+  text-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+}
+.company-description-container p{
+  text-align: center;
+  font-size:1.1vw;
+  color:var(--tertiary-accented);
+  opacity: 0.8;
+  padding:0px 4vw
+}
+.team-members-cards-container{
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  row-gap: 25px;
+  column-gap: 20px;
+  grid-template-columns: auto auto auto;
+  padding:20px 10vw;
+  justify-items: center;
+}
+.team-member-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  padding:1.5vw 3vw;
+  box-shadow: 0px 0px 15px rgba(255,0,0,0.2);
+  border-radius: 10px;
+  background:var(--primary-five)
+}
+.team-member-card:hover{
+  scale:1.01;
+  box-shadow: 0px 0px 15px rgba(255,56,109,0.3);
+}
+.team-member-card h3{
+  color:var(--tertiary-accented);
+  font-size: 1.8vw;
+  margin-bottom: 1.2vw;
+  text-align: center;
+}
+.team-member-card img{
+  width:auto;
+  height:18vw;
+  margin-bottom:0.8vw;
+  opacity:0.7;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+.team-member-card h4{
+  font-size:1.4vw;
+  color:var(--secondary-four);
+  margin: 0.3vw 0px;
+  text-align: center;
+}
+.team-member-card p{
+  text-align: center;
+  color:var(--tertiary-light);
+  opacity:0.5;
+  font-size:0.9vw;
+  margin-top: 0.4vw;
+
+}
+.about-us-video-container video {
+  width: 100vw;
+  object-fit: cover;
+  opacity: 0.15;
+  /* filter: blur(2px); */
+} /* COPY SAME THING EVERYWHERE */
+
+.about-us-mission-container{
+  background:var(--primary-two)
+}
+@media only screen and (max-width:1000px){
+  .company-description-container p{
+  font-size:1.4vw
+  }
+  .team-member-card p{
+    font-size:1.1vw
+  }
+  .team-member-card h4{
+    font-size:1.5vw
+  }
+  .team-member-card h3{
+    font-size:2vw
+  }
+}
+@media only screen and (max-width:760px){
+  .company-description-container p{
+  font-size:1.5vw
+  }
+  .company-description-container h1{
+    font-size:6vw
+  }
+  .team-members-cards-container{
+    grid-template-columns: auto auto;
+  }
+  .team-container h1{
+    margin: 20px 0px;
+    font-size: 6vw;
+  }
+  .team-member-card{
+    padding:30px 20px
+  }
+  .team-member-card img{
+    height:30vw;
+    margin: 1vw 0px 2vw 0px;
+  }
+  .team-member-card h3{
+    font-size:2.7vw
+  }
+  .team-member-card h4{
+    font-size: 2vw;
+  }
+  .team-member-card p{
+    font-size: 1.4vw;
+    margin-top: 1vw;
+  }
+}
+@media only screen and (max-width:670px){
+  .company-description-container{
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .company-description-container p{
+  font-size:1.8vw
+  }
+  .company-description-container h1{
+    font-size:8vw;
+    line-height: 9vw;
+  }
+}
+@media only screen and (max-width:670px){
+  .company-description-container{
+    row-gap: 15px;
+    width:100%;
+    border-radius: 0px;
+    margin:40px 0px
+  }
+  .company-description-container p{
+  font-size:2.3vw
+  }
+  .company-description-container h1{
+    font-size:10vw;
+    line-height: 11vw;
+  }
+}
+@media only screen and (max-width:550px){
+  .team-members-cards-container{
+    grid-template-columns: auto;
+    width:100%;
+    padding:20px
+  }
+  .team-container h1{
+    margin-top: 25px;
+    font-size: 40px;
+  }
+  .team-member-card{
+    width:90vw;
+    border-radius:20px 5px 5px 20px;
+    padding:0px;
+    flex-direction: row;
+    justify-content: space-between;
+    height:auto
+  }
+  .team-member-card img{
+    margin:0px;
+    width:40vw;
+    height:auto;
+    margin-bottom: -6px;
+    border-radius: 20px 0px 0px 20px;
+  }
+  .small-screen-content-container-about{
+    width:60vw;
+    padding:20px
+  }
+  .small-screen-content-container-about h3{
+    font-size:25px;
+    margin-bottom: 10px;
+  }
+  .small-screen-content-container-about h4{
+    font-size: 17px;
+  }
+  .small-screen-content-container-about p{
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .image-container-team-member-small{
+    padding:0px
+  }
+}

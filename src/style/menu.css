@@ -1,0 +1,143 @@
+.menu-s {
+  width: 100vw;
+  background: var(--primary);
+  position: absolute;
+  z-index: 110;
+  transition: 0.3s;
+}
+.menu-u-list {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-height: 100vh;
+}
+.menu-container {
+  position: fixed;
+  z-index: 1000;
+  transform: translate(0, 0, 0);
+  /* animation: open-menu 0.5s ease-in-out;
+  animation-fill-mode: forwards; */
+}
+.menu-container-hide {
+  pointer-events: none;
+  z-index: 1000;
+  position: absolute;
+  transform: translate(0, -100vh, 0);
+  top: -100vh;
+  /* animation: close-menu 0.5s ease-in-out forwards; */
+}
+@keyframes open-menu {
+  0% {
+    position: absolute;
+    top: -100vh;
+  }
+  100% {
+    position: fixed;
+    top: 0;
+  }
+}
+@keyframes close-menu {
+  0% {
+    position: fixed;
+    top: 0;
+  }
+  100% {
+    position: absolute;
+    top: -100vh;
+  }
+}
+.menu-item {
+  border-bottom: 2px solid var(--primary-two);
+  font-size: 20px;
+  height: calc(53vh / 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--tertiary-light);
+  transition: 0.3s;
+}
+.menu-backdrop {
+  height: 100vh;
+  width: 100vw;
+  background: var(--accent);
+  position: absolute;
+  opacity: 0.5;
+}
+.menu-item:hover {
+  background: var(--primary-two);
+  font-size: 21px;
+}
+
+.close-menu {
+  height: 7vh;
+  background: var(--alert);
+  color: var(--tertiary-accented);
+}
+
+.close-menu:hover {
+  background: red;
+}
+
+.sign-up {
+  background: var(--secondary);
+  color: var(--tertiary-accented);
+}
+.sign-up:hover {
+  background: var(--secondary-two);
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+.project-menu {
+  height: 4vh;
+  border-bottom: 1px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--tertiary-light);
+  transition: 0.3s;
+  font-size: 12px;
+  background: var(--primary-three);
+  font-weight: 500;
+  animation: open-project-menu 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.project-menu:hover {
+  font-size: 14px;
+}
+.project-list-hide {
+  height: 0vh;
+  display: none;
+  animation: close-project-menu 0.3s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes close-project-menu {
+  0% {
+    height: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  100% {
+    height: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+  }
+}
+@keyframes open-project-menu {
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 4vh;
+  }
+}
+.project-menu:hover {
+  background: var(--primary-four);
+}

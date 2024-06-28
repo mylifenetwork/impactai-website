@@ -1,0 +1,10 @@
+.privacy-policy-container{
+    background:var(--primary-two)
+}
+.policy{
+    padding:50px 40px
+}
+.policy p{
+    text-align: justify;
+    color:var(--tertiary)
+}

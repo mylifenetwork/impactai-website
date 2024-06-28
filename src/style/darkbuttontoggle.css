@@ -1,0 +1,60 @@
+.nav-toggle {
+  display: flex;
+  background: none;
+  border: 2px solid var(--secondary-two);
+  border-radius: 17.5px;
+  z-index: 3;
+}
+.nav-darkmode {
+  height: 35px;
+  width: 4vw;
+  min-width: 50px;
+  background: none;
+  border: none;
+  color: var(--tertiary-accented);
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  color: var(--tertiary);
+  transition: 0.3s;
+}
+.nav-darkmode:hover {
+  color: var(--tertiary-accented);
+}
+.active {
+  /* background: var(--secondary-two); */
+  color: var(--tertiary-accented);
+}
+.left {
+  border-radius: 25% 0px 0px 25%;
+  animation:slider-to-left 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes slider-to-left{
+  0%{transform:translate(100%,0);border-radius:0px 25% 25% 0px}
+  100%{transform:translate(0,0);border-radius:25% 0px 0px 25%}
+}
+.right {
+  border-radius: 0px 25% 25% 0px;
+  transform:translate(100%,0);
+  animation:slider-to-right 0.5s ease-in-out;
+  animation-fill-mode: forwards;
+} 
+@keyframes slider-to-right{
+  0%{transform:translate(0,0);border-radius:25% 0px 0px 25%}
+  100%{transform:translate(100%,0);border-radius:0px 25% 25% 0px}
+}
+.toggle-button-image{
+  z-index:1000;
+  position:absolute;
+}
+.slider{
+  width:4vw;
+  min-width:50px;
+  height:35px;
+  position:absolute;
+  z-index: 8;
+  background:var(--secondary-two);
+}

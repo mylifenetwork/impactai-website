@@ -1,0 +1,17 @@
+.error404-container{
+  background: var(--primary);
+}
+h1 {
+  color: var(--tertiary-light);
+  font-family: 'Poppins';
+  font-size:50px;
+  text-align: center;
+}
+div.message_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  width: 100%;
+  padding:20px
+}

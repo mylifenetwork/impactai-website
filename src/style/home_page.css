@@ -1,0 +1,501 @@
+* {
+  font-family: "Poppins";
+}
+video {
+  height: 100vh;
+  width: auto;
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+}
+body {
+  overflow-x: hidden;
+}
+.background-image-container {
+  display: flex;
+  flex-direction: column;
+}
+.introduction-slogan {
+  margin-top: 3vw;
+  margin-bottom: 3.5vw;
+  padding: 10px 20px 0px 20px;
+}
+.introduction-slogan h1 {
+  font-size: 4vw;
+  color: var(--tertiary-accented);
+}
+.introduction-slogan h1 span {
+  background: var(--secondary-gradient-opposite);
+  color: transparent;
+  background-clip: text;
+}
+.container-tone {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+.content-container {
+  z-index: 2;
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.industry-usage-header {
+  color: transparent;
+  background: var(--secondary-gradient);
+  width: fit-content;
+  background-clip: text;
+  font-size: 65px;
+  line-height: 60px;
+  text-align: center;
+  margin: 0px auto 10px auto;
+}
+
+.industry-usage-slogan {
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 0px 30px;
+  color: var(--tertiary-light);
+}
+.content-container h1 {
+  text-transform: uppercase;
+  font-family: "Poppins";
+  color: var(--tertiary-accented);
+  font-size: 160px;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  line-height: 160px;
+}
+.content-container h3 {
+  color: var(--secondary-two);
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+  font-size: 30px;
+  text-align: center;
+  line-height: 50px;
+  margin-top: 5px;
+}
+.content-container h3 span {
+  color: var(--primary);
+  background: var(--secondary-two);
+  padding: 5px 7px;
+  border-radius: 60px;
+  font-weight: 800;
+  font-family: "Poppins Bold";
+  text-shadow: 0px 0px 0px;
+}
+.landing-page-hr {
+  width: 20%;
+  min-width: 150px;
+  margin-top: 30px;
+  height: 3px;
+  background: var(--tertiary-light);
+  border: var(--tertiary-light);
+  border-radius: 1.5px;
+}
+.slider-header {
+  font-size: 8vw;
+  letter-spacing: 0.1vw;
+  line-height: 6vw;
+  transform: translateY(1.5vw);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  color: var(--tertiary-light);
+  z-index: 10000;
+  text-transform: uppercase;
+}
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100vw;
+  margin-bottom: 6vw;
+  padding-top: 3vw;
+  z-index: 1;
+}
+.introduction-video {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.introduction-video h3{
+  font-size:45px;
+  margin-bottom: 20px;
+  color:var(--tertiary-light)
+}
+.youtube-video {
+  width: 50vw;
+  height: calc(50vw * 0.573);
+}
+.yt-vid-container {
+  padding: 2vw;
+  background: var(--primary-five);
+  border-radius: 5px;
+}
+.yt-vid-container::before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 12vw;
+  background: var(--primary-five);
+  left: 0px;
+  transform: translateY(calc(50vw * 0.573 * 0.5 - 6vw));
+  z-index: -1;
+}
+.landing-display {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  scale: 0.9;
+}
+.break-line-slogan {
+  display: none;
+}
+.tech-f-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vw;
+  padding-top: 2vw;
+}
+.tech-f-container-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  padding: 1vw;
+  width: 60vw;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    95% 50%,
+    100% 100%,
+    0% 100%,
+    5% 50%,
+    0% 0%
+  );
+  margin-bottom: 1.5vw;
+}
+.mission-container {
+  padding-bottom: 9vw;
+}
+
+.tech-f-container button {
+  margin-top: 2vw;
+  border-radius: 2vw 0.5vw 2vw 0.5vw;
+  padding: 1.3vw 2vw;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  font-weight: bold;
+  background: var(--secondary-two);
+  color: var(--primary);
+}
+.tech-f-container button:hover {
+  scale: 1.02;
+  background: var(--secondary-three);
+  border-radius: 0.5vw;
+  gap: 20px;
+}
+.slider-container-button {
+  border-radius: 2vw;
+  margin-top: 0.5vw;
+  padding: 1.3vw 1.7vw;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 21px;
+  font-weight: bold;
+  background: var(--secondary-four);
+  color: var(--primary-four);
+}
+.slider-container-button:hover {
+  scale: 1.02;
+  background: var(--secondary);
+  color: var(--primary);
+  gap: 20px;
+  border-radius: 1.5vw;
+}
+.tech-f-container-header h1 {
+  font-size: 70px;
+  line-height: 80px;
+  color: var(--secondary-two);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.3vw;
+}
+.tech-f-container-header p {
+  font-size: 18px;
+  color: var(--tertiary-light);
+}
+.vector-graphic {
+  width: 100vw;
+  height: 15vw;
+  margin: 0px;
+  padding: 0px;
+}
+.industry-info-container {
+  padding: 1.5vw 3vw;
+  padding-bottom: 3.5vw;
+}
+.post-vector-container {
+  height: auto;
+  width: 100vw;
+  transform: translateY(-7px);
+  background: var(--primary-two);
+}
+.tech-features-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  row-gap: 1.5vw;
+  column-gap: 1.5vw;
+  scale: 0.9;
+}
+.sign-up-button-footer-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  margin-top: 3vw;
+  margin-bottom: 4vw;
+}
+.sign-up-button-footer-div button {
+  padding: 1.4vw 4vw;
+  border-radius: 2.8vw;
+  border: none;
+  background: var(--secondary);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: var(--accent);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.sign-up-button-footer-div button:hover {
+  scale: 1.04;
+  border-radius: 2vw;
+  background: var(--secondary-four);
+  color: var(--primary-four);
+  gap: 20px;
+}
+@media only screen and (max-width: 900px) {
+  .content-container h1 {
+    font-size: 130px;
+    line-height: 140px;
+  }
+  .introduction-video h3{
+    font-size:40px;
+  }
+  .sign-up-button-footer-div button {
+    padding: 15px 40px;
+    border-radius: 30px;
+    font-size: 17px;
+  }
+  .sign-up-button-footer-div button:hover {
+    scale: 1.02;
+    border-radius: 20px;
+    gap: 20px;
+  }
+  .slider-header {
+    font-size: 9vw;
+  }
+  .content-container h3 {
+    font-size: 25px;
+  }
+  .tech-f-container-header {
+    width: 100vw;
+    clip-path: polygon(0% 0%, 110% 0%, 100% 100%, 0% 100%, 0% 0%);
+  }
+  .tech-f-container-header p {
+    font-size: 16px;
+  }
+  .tech-f-container button {
+    font-size: 21px;
+  }
+  .slider-container-button {
+    font-size: 19px;
+    margin-top: 20px;
+  }
+  .tech-features-container {
+    margin: 0px 0px;
+  }
+  .industry-info-container {
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .tech-f-container-header h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+@media only screen and (max-width: 725px) {
+  .landing-display {
+    margin-top: 20px;
+  }
+  .tech-f-container {
+    padding-top: 40px;
+    margin-bottom: 80px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .content-container h1 {
+    font-size: 100px;
+    line-height: 110px;
+  }
+  .slider-header {
+    font-size: 10vw;
+  }
+  .sign-up-button-footer-div button {
+    padding: 13px 37px;
+    font-size: 14px;
+  }
+  .tech-features-container {
+    grid-template-columns: auto auto;
+    row-gap: 2vw;
+  }
+  .content-container h3 {
+    font-size: 20px;
+  }
+  .landing-page-hr {
+    margin-top: 25px;
+  }
+  .industry-usage-header {
+    font-size: 50px;
+  }
+  .industry-usage-slogan {
+    font-size: 12px;
+  }
+  .introduction-slogan h1 {
+    font-size: 4.5vw;
+  }
+}
+@media only screen and (max-width: 690px) {
+  .slider-container {
+    padding-top: 5vw;
+    margin-bottom: 8vw;
+  }
+  .mission-container {
+    padding-bottom: 90px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .youtube-video {
+    width: 90vw;
+    height: calc(90vw * 0.573);
+  }
+  .sign-up-button-footer-div button {
+    padding: 12px 40px;
+    border-radius: 5px;
+    font-size: 17px;
+    width:90vw;
+  }
+  .sign-up-button-footer-div button:hover {
+    scale: 1.02;
+    border-radius: 0px;
+    gap: 20px;
+  }
+  .introduction-slogan {
+    margin-top: 30px;
+  }
+  .yt-vid-container::before {
+    height: 100px;
+    transform: translateY(calc(90vw * 0.573 * 0.5 - 50px));
+  }
+  .tech-f-container-header h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .tech-f-container-header p {
+    font-size: 14px;
+  }
+  .tech-f-container button {
+    font-size: 19px;
+  }
+  .slider-container-button {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .content-container h1 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .introduction-video h3{
+    font-size:35px;
+  }
+  .slider-header {
+    font-size: 13vw;
+  }
+  .content-container h3 {
+    font-size: 17px;
+  }
+  .tech-features-container {
+    grid-template-columns: auto;
+  }
+  .tech-f-container-header p {
+    font-size: 16px;
+  }
+  .tech-f-container button {
+    width: 90vw;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  .slider-container-button {
+    width: 80vw;
+    height: 45px;
+    border-radius: 5px;
+  }
+  .slider-container {
+    padding-top: 65px;
+    margin-bottom: 75px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .break-line-slogan {
+    display: inline-block;
+  }
+  .introduction-video h3{
+    font-size:30px;
+  }
+  .content-container h3 {
+    line-height: 34px;
+    font-size: 3.7vw;
+  }
+  .content-container h1 {
+    font-size: 17vw;
+    margin-bottom: -1vw;
+  }
+  .industry-usage-header {
+    font-size: 10vw;
+  }
+  .industry-usage-slogan {
+    font-size: 3vw;
+  }
+}

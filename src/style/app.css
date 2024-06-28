@@ -1,0 +1,78 @@
+@font-face{
+  font-family:'Poppins';
+  src:url('../fonts/Poppins-Regular.ttf')
+}
+body{
+  background:var(--accent);
+}
+html{
+  scroll-behavior: smooth;
+}
+@font-face{
+  font-family:"Poppins Bold";
+  src:url('../fonts/Poppins-Bold.ttf')
+}
+body::-webkit-scrollbar{
+  width:0.5vw;
+  min-width: 4px;
+}
+body::-webkit-scrollbar-track{
+  background: black;
+}
+body::-webkit-scrollbar-thumb{
+  background: var(--tertiary-accented);
+  border-radius: 0.25em;
+}
+@media only screen and (max-width:500px){
+  body::-webkit-scrollbar{
+    display:none
+  }
+}
+*{
+  transition:0.3s
+}
+:root {
+  --primary: rgb(26, 32, 42);
+  --primary-two: rgb(24, 30, 40);
+  --navbar-background:linear-gradient(
+    to right,
+    rgb(26, 32, 42, 0.8),
+    rgb(24, 30, 40, 0.8)
+  );
+  --primary-three: #263040;
+  --primary-four: #171c25;
+  --primary-five:#14171e;
+  --primary-gradient:linear-gradient(to right,#d14e36, #9c3422);
+  --accent:#000;
+  --secondary: #9a29bb;
+  --secondary-two: #ff386d;
+  --secondary-three:#e77593;
+  --secondary-four:#b165c8;
+  --secondary-gradient: linear-gradient(to right, #9a29bb, #ff386d);
+  --secondary-gradient-opposite: linear-gradient(to left, #9a29bb, #ff386d);
+  --tertiary: #909090;
+  --tertiary-light: #b9b9b9;
+  --tertiary-accented: #ffffff;
+  --alert: #d14e36;
+}
+
+/* :root {
+  --primary: #73727a;
+  --primary-two: #85848d;
+  --primary-three: #5b5a60;
+  --primary-four: #adacb5;
+  --primary-five:#c6c5cf;
+  --navbar-background:linear-gradient(to right,#73727a,#85848d);
+  --primary-gradient:linear-gradient(to right,#d14e36, #9c3422);
+  --accent:#fff;
+  --secondary: #731a8e;
+  --secondary-two: rgb(162, 28, 64);
+  --secondary-three:#ed5d83;
+  --secondary-four:#b14ad0;
+  --secondary-gradient: linear-gradient(to right, #2b242d, #ff386d);
+  --secondary-gradient-opposite: linear-gradient(to left, #9a29bb, #ff386d);
+  --tertiary: #4a4a4a;
+  --tertiary-light: #393939;
+  --tertiary-accented: #000;
+  --alert: #d14e36;
+} */
