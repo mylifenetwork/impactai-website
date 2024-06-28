@@ -10,18 +10,18 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Project1 from "./pages/Projects Pages/Project1";
 import LoadingScreen from "./pages/LoadingScreen";
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
-  const handleLoading = () => {
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  };
+  // const [isLoading, setIsLoading] = useState(true);
+  // const handleLoading = () => {
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 2000);
+  // };
   const [showProjMenu, setShowProjMenu] = useState(false);
-  useEffect(() => {
-    window.addEventListener("load", handleLoading);
-    return () => window.removeEventListener("load", handleLoading);
-  });
-  return !isLoading ? (
+  // useEffect(() => {
+  //   window.addEventListener("load", handleLoading);
+  //   return () => window.removeEventListener("load", handleLoading);
+  // });
+  return(
     <>
       <div class="app-container">
         <BrowserRouter>
@@ -43,9 +43,7 @@ function App() {
         </BrowserRouter>
       </div>
     </>
-  ) : (
-    <LoadingScreen />
-  );
+  )
 }
 
 export default App;
