@@ -55,42 +55,7 @@ body::-webkit-scrollbar-thumb{
   --tertiary-accented: #ffffff;
   --alert: #d14e36;
 }
-
-/* :root {
-  --primary: #73727a;
-  --primary-two: #85848d;
-  --primary-three: #5b5a60;
-  --primary-four: #adacb5;
-  --primary-five:#c6c5cf;
-  --navbar-background:linear-gradient(to right,#73727a,#85848d);
-  --primary-gradient:linear-gradient(to right,#d14e36, #9c3422);
-  --accent:#fff;
-  --secondary: #731a8e;
-  --secondary-two: rgb(162, 28, 64);
-  --secondary-three:#ed5d83;
-  --secondary-four:#b14ad0;
-  --secondary-gradient: linear-gradient(to right, #2b242d, #ff386d);
-  --secondary-gradient-opposite: linear-gradient(to left, #9a29bb, #ff386d);
-  --tertiary: #4a4a4a;
-  --tertiary-light: #393939;
-  --tertiary-accented: #000;
-  --alert: #d14e36;
-} */
-
-/* .app-container{
-  width:100%;
-  height:100%
-} */
-/* @media only screen and (min-width:1300){
-  .app-container{
-    width:1368px;
-    padding:0px auto
-  }
-} */
-
-.app-container,body,html,#root{
-  width:100vw;
-  height:100vh;
-  overflow-y:scroll;
-  overflow-x:hidden;
+body{
+  overflow-x: hidden;
+  width: 100vw;
 }

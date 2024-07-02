@@ -20,8 +20,9 @@ function NavBar({ showProjMenu, setShowProjMenu }) {
   };
   const style_project_menu = {
     display: showProjMenu ? "block" : "none",
-    top: "69px",
-    left: "30vw",
+    transform:'translateY(50px)'
+    // top: "8.3vh",
+    // left: "55vh",
   };
   useEffect(() => {
     const handleScroll = () => {
